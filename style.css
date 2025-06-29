@@ -1,7 +1,7 @@
 /* TAMBAHKAN KODE INI DI BARIS PALING ATAS STYLE.CSS */
 @font-face {
-  font-family: 'Amsterdam';
-  src: url('fonts/AmsterdamOne.ttf'); /* Pastikan path/lokasinya benar */
+  font-family: "Amsterdam";
+  src: url("fonts/AmsterdamOne.ttf"); /* Pastikan path/lokasinya benar */
 }
 
 :root {
@@ -22,7 +22,7 @@ html {
 
 body {
   font-size: 1.1rem;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -41,19 +41,19 @@ body {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #79c0f2;
-  background-image: url('img/rumah-gadang.jpeg'); 
-  
+  background-image: url("img/rumah-gadang.jpeg");
+
   /* ▼▼▼ CUKUP UBAH SATU BARIS INI ▼▼▼ */
   background-size: cover;
   /* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-  
+
   background-position: center bottom;
   background-attachment: fixed;
   z-index: -1;
@@ -67,11 +67,10 @@ body {
 }
 
 .hero h1 {
-  font-family: 'Amsterdam', cursive; /* Gunakan nama font yang baru didaftarkan */
+  font-family: "Amsterdam", cursive; /* Gunakan nama font yang baru didaftarkan */
   font-size: 4rem;
   font-weight: bold;
-  color: white
-  
+  color: white;
 }
 
 .hero h4 {
@@ -116,7 +115,7 @@ body {
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-title {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: clamp(2rem, 5vw, 3.2rem);
   font-weight: bold;
 }
@@ -150,7 +149,7 @@ body {
 .rsvp h2,
 .gifts h2 {
   color: var(--pink);
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: bold;
   text-align: center;
@@ -179,7 +178,7 @@ body {
 }
 
 .home .couple h3 {
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: clamp(1.8rem, 4vw, 2.4rem);
   color: var(--pink);
   margin-bottom: 1rem;
@@ -308,7 +307,7 @@ body {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background-color: var(--pink);
@@ -324,7 +323,7 @@ body {
 }
 
 .timeline li::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -355,7 +354,7 @@ body {
 }
 
 .timeline li .timeline-panel::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 60px;
   right: -15px;
@@ -429,13 +428,20 @@ body {
 }
 
 .rsvp form input,
-.rsvp form select {
+.rsvp form select,
+.rsvp form textarea {
   width: 100%;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+}
+
+.rsvp form textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: "Work Sans", sans-serif;
 }
 
 .rsvp button {
@@ -540,7 +546,7 @@ footer li {
     margin-top: -2rem;
     padding: 3rem 1rem;
   }
-  
+
   .home .heart {
     display: none;
   }
@@ -693,7 +699,8 @@ footer li {
 }
 
 /* Prevent horizontal scrolling */
-body, html {
+body,
+html {
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -705,8 +712,8 @@ body, html {
 
 /* Better touch targets for mobile */
 @media (max-width: 768px) {
-  button, 
-  a, 
+  button,
+  a,
   .nav-link {
     min-height: 44px;
     min-width: 44px;
@@ -722,14 +729,14 @@ body, html {
   padding: 1.5rem 1rem; /* Padding atas-bawah 1.5rem, kiri-kanan 1rem */
   display: flex;
   flex-direction: column; /* Menyusun elemen ke bawah */
-  align-items: center;    /* Membuat semua elemen rata tengah secara horizontal */
-  gap: 0.5rem;            /* Memberi jarak antar elemen (logo, baris rekening, nama) */
+  align-items: center; /* Membuat semua elemen rata tengah secara horizontal */
+  gap: 0.5rem; /* Memberi jarak antar elemen (logo, baris rekening, nama) */
 }
 
 /* Mengatur logo bank */
 .gift-card-logo {
   max-width: 120px; /* Lebar maksimal logo */
-  height: auto;       /* Tinggi menyesuaikan otomatis */
+  height: auto; /* Tinggi menyesuaikan otomatis */
   margin-bottom: 1rem; /* Jarak bawah dari logo ke baris rekening */
 }
 
@@ -748,7 +755,7 @@ body, html {
 
 /* Mengatur teks nomor rekening */
 .rekening-number {
-  font-family: 'Courier New', Courier, monospace; /* Font khusus angka agar rapi */
+  font-family: "Courier New", Courier, monospace; /* Font khusus angka agar rapi */
   font-size: 1.8rem;
   font-weight: 1000;
   color: #212529; /* Warna teks lebih gelap */
@@ -762,7 +769,6 @@ body, html {
   text-transform: uppercase;
   margin-top: 0.5rem; /* Jarak atas dari baris rekening ke nama */
 }
-
 
 /* ============================================= */
 /* RESPONSIVE UNTUK TAMPILAN GADGET (HP)        */
@@ -779,13 +785,12 @@ body, html {
 
   .rekening-number {
     font-size: 1.8rem;
-     /* Perbesar sedikit nomor rekening agar lebih mudah dibaca di HP */
-    
+    /* Perbesar sedikit nomor rekening agar lebih mudah dibaca di HP */
   }
 
   /* Membuat tombol salin lebih lebar di HP */
   .btn-copy {
-    width: 100%; 
+    width: 100%;
   }
 }
 /* ================================================= */
@@ -796,7 +801,7 @@ body, html {
     /* Mengecilkan ukuran font HANYA di layar kecil 
       agar muat dalam satu baris. Anda bisa sesuaikan angkanya.
     */
-    font-size: 2.8rem; 
+    font-size: 2.8rem;
   }
 
   .hero h4 {
@@ -812,7 +817,6 @@ body, html {
 /* Tambahkan kode ini di baris paling akhir style.css    */
 /* ======================================================= */
 @media (max-width: 576px) {
-
   /* Memberi jarak yang lebih besar di bawah tulisan "Kepada Bapak/Ibu/dst" */
   .hero h4 {
     margin-bottom: 2.5rem; /* Kita perbesar jaraknya menjadi 2.5rem */
@@ -823,5 +827,237 @@ body, html {
     margin-top: 0;
     font-size: 2.8rem; /* Ukuran font agar tetap satu baris */
   }
-  
+}
+
+/* ============================================= */
+/* STYLE UNTUK DAFTAR RSVP RESPONSES            */
+/* ============================================= */
+
+.rsvp-responses {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.rsvp-item {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rsvp-item:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  transform: translateX(5px);
+}
+
+.rsvp-responses::-webkit-scrollbar {
+  width: 6px;
+}
+
+.rsvp-responses::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.rsvp-responses::-webkit-scrollbar-thumb {
+  background: var(--pink);
+  border-radius: 3px;
+}
+
+.rsvp-responses::-webkit-scrollbar-thumb:hover {
+  background: #0a7ba8;
+}
+
+/* Loading animation */
+#loading-message i {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ============================================= */
+/* STYLE UNTUK EMOTICON BUTTONS                 */
+/* ============================================= */
+
+.emoticon-buttons {
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.75rem;
+  max-width: 300px; /* Kurangi dari 320px ke 300px */
+  justify-items: center;
+  align-items: center;
+  /* Tambahkan margin-left untuk geser ke kiri */
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-40px); /* Geser sedikit ke kiri */
+}
+
+.emoticon-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1.5rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.emoticon-btn:hover {
+  background-color: var(--pink);
+  border-color: var(--pink);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(13, 149, 199, 0.3);
+}
+
+.emoticon-btn:active {
+  transform: scale(0.95);
+}
+
+.emoticon-count {
+  font-size: 0.7rem;
+  font-weight: bold;
+  margin-top: 2px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 1px 4px;
+  min-width: 16px;
+  text-align: center;
+}
+
+/* Emoticon response summary */
+.emoticon-summary {
+  display: none !important;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.summary-item {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.summary-item .emoji {
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.summary-item .count {
+  font-weight: bold;
+  color: var(--pink);
+}
+
+/* Toggle button styling */
+#toggle-rsvp-list {
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+#toggle-rsvp-list:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--pink);
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 576px) {
+  .rsvp-responses {
+    max-height: 300px;
+  }
+
+  .rsvp-item {
+    padding: 0.75rem !important;
+  }
+
+  .rsvp-item h5 {
+    font-size: 1rem;
+  }
+
+  .emoticon-buttons {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    max-width: 260px; /* Kurangi dari 280px */
+    margin: 1rem auto;
+    transform: translateX(-80px); /* Geser ke kiri di mobile */
+  }
+
+  .emoticon-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.3rem;
+    border-radius: 12px;
+  }
+
+  .emoticon-count {
+    font-size: 0.6rem;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.3rem;
+  }
+
+  .emoticon-summary {
+    max-width: 300px;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .emoticon-buttons {
+    gap: 0.4rem;
+    max-width: 240px; /* Kurangi dari 260px */
+    margin: 1rem auto;
+    transform: translateX(-20px);
+  }
+
+  .emoticon-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+
+  .emoticon-summary {
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .emoticon-buttons {
+    max-width: 350px;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+
+  .emoticon-btn {
+    width: 75px;
+    height: 75px;
+    font-size: 1.6rem;
+  }
+
+  .emoticon-summary {
+    max-width: 380px;
+  }
 }
